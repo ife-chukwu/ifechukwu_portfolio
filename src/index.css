@@ -210,6 +210,14 @@ body:hover .container3 {
   animation: horizontalScroll2 20s linear infinite;
 }
 
+.primary:hover .hovee {
+  display: flex;
+  overflow-x: auto;
+}
+.hovee {
+  display: none;
+}
+
 @keyframes horizontalScroll {
   0%,
   100% {
