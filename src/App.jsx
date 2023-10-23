@@ -7,7 +7,7 @@ function App() {
 
   return (
     <main
-      className="overflow-x-hidden "
+      className="overflow-x-hidden"
       data-scroll-container
     >
       <ImageSlider />

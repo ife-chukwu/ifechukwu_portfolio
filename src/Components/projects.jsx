@@ -64,10 +64,11 @@ export const Projects = () => {
 
               <p className="w-full px-20 flex justify-center text-center mt-4 text-md ">
                 PizBug is a successful personal project, an online pizza and
-                burger store built to test my React skills.
+                burger store built to test my React skills. Desktop responsive
+                only.
               </p>
               <Link
-                to="https://amwe.com.ng/"
+                to="https://food-service-sandy.vercel.app/"
                 className="w-full flex justify-center mt-5 gap-3 items-center"
               >
                 <span className="text-4xl">
@@ -100,10 +101,10 @@ export const Projects = () => {
 
               <p className="w-full px-20 flex justify-center text-center mt-4 text-md ">
                 WUUSTORE is An online furniture marketplace I built, currently
-                paused due to my internship.
+                paused due to my internship. Desktop responsive
               </p>
               <Link
-                to="https://amwe.com.ng/"
+                to="https://wuu-store.netlify.app/"
                 className="w-full flex justify-center mt-5 gap-3 items-center"
               >
                 <span className="text-4xl">
@@ -141,7 +142,7 @@ export const Projects = () => {
                 redux toolkit with this particular site.
               </p>
               <Link
-                to="https://amwe.com.ng/"
+                to="https://checking-out-redux-tool-kit.vercel.app/"
                 className="w-full flex justify-center mt-5 gap-3 items-center"
               >
                 <span className="text-4xl">
@@ -185,7 +186,7 @@ export const Projects = () => {
                   paid at just a push of a button.
                 </p>
                 <Link
-                  to="https://amwe.com.ng/"
+                  to="https://www.behance.net/gallery/182291389/Payme-Payroll-Management-System"
                   className="w-full flex justify-center mt-5 gap-3 items-center"
                 >
                   <span className="text-4xl">
@@ -221,7 +222,7 @@ export const Projects = () => {
                   This is just a replicate of spotify design given to us as a
                   standardization test during my internship. In order to get
                   access to this site you will have to have a real spotify
-                  account.
+                  account.{" "}
                 </p>
                 <Link
                   to="https://amwe.com.ng/"
@@ -233,6 +234,12 @@ export const Projects = () => {
                   <span className="underline pb-1 text-blue-700">
                     Go to site.
                   </span>
+                </Link>
+                <Link
+                  className="flex justify-center text-sm text-blue-500"
+                  to="https://developer.spotify.com/documentation/web-api"
+                >
+                  Open this api tool in order for this site to respond properly{" "}
                 </Link>
               </div>
             </div>
@@ -258,10 +265,10 @@ export const Projects = () => {
                 <p className="w-full px-20 flex justify-center mt-4 text-md text-justify ">
                   This is an unfinished project, the purpose of this project is
                   to help people with budget making. It will help you keep track
-                  of your savings and expenditures.
+                  of your savings and expenditures. Unfinished.
                 </p>
                 <Link
-                  to="https://amwe.com.ng/"
+                  to="https://budget-app-five-lac.vercel.app/"
                   className="w-full flex justify-center mt-5 gap-3 items-center"
                 >
                   <span className="text-4xl">
@@ -300,7 +307,7 @@ export const Projects = () => {
                   </p>
                 </div>
                 <Link
-                  to="https://amwe.com.ng/"
+                  to="https://netflix-clone-orcin-nu.vercel.app/?"
                   className="w-full flex justify-center mt-5 gap-3 items-center"
                 >
                   <span className="text-4xl">

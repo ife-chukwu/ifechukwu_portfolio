@@ -2,6 +2,7 @@ import { AutoTextWriter } from "../Components/autoTextWriter";
 import { Projects } from "../Components/projects";
 import { StackFlowItems } from "../Components/stackFlowItems";
 import { Footer } from "../Navigation/footer";
+import { About } from "../Components/about";
 
 export const Home = () => {
   return (
@@ -26,10 +27,12 @@ export const Home = () => {
       </h1>
 
       <p className="w-full tracking-light text-md flex justify-center pb-5">
-        Projects I have worked on so far{" "}
+        Projects I have worked on so far
       </p>
 
       <Projects />
+      <About />
+
       <Footer />
     </main>
   );
