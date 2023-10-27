@@ -20,13 +20,13 @@ export const ImageSlider = () => {
       className="w-full flex h-full
   "
     >
-      <div className="bg-[url('https://wallpapers.com/images/hd/buildings-and-city-lights-pixel-art-38iglbm66jgrq50h.webp')]">
+      <div className="bg-[url('https://wallpapers.com/images/hd/buildings-and-city-lights-pixel-art-38iglbm66jgrq50h.webp')] ">
         <div className="w-full h-full bg-gradient-to-tr from-black via-black/40 to-black/80 fixed">
           {images.map((imageURL, index) => {
             return (
               <div
                 key={index}
-                className={`slide transform transition-transform duration-500 mix-blend-overlay ${
+                className={`slide transform transition-transform duration-500 bg-left-top md:bg-center mix-blend-overlay ${
                   index === currentIndex
                     ? "translate-x-0"
                     : "flex -translate-x-full"

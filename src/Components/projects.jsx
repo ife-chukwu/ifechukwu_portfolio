@@ -6,15 +6,14 @@ import Atropos from "atropos/react";
 export const Projects = () => {
   return (
     <div className="overflow-hidden">
-      <h1 className="mx-auto w-[20%] text-5xl ml-20 font-bold text-white">
-        Client
+      <h1 className="flex justify-center gap-2 py-5 md:py-0 mx-auto md:w-[20%] text-2xl md:text-5xl md:ml-20 md:font-bold md:text-white  bg-gradient-to-tr from-[white] via-[rgb(211,192,132)] to-[#f7edc0] bg-clip-text text-transparent">
+        Client <span className="md:hidden text-white ">Projects</span>
       </h1>
-      <p className="w-[20%] mb-10 text-2xl pb-1 pl-10 ml-20 font-bold border-b-2 border-white/75 rounded-sm  bg-gradient-to-tr from-[white] via-[rgb(211,192,132)] to-[#f7edc0] bg-clip-text text-transparent">
+      <p className="md:w-[20%] mb-10 text-2xl pb-1 pl-10 ml-20 font-bold md:border-b-2 border-white/75 rounded-sm  bg-gradient-to-tr from-[white] via-[rgb(211,192,132)] to-[#f7edc0] bg-clip-text text-transparent md:flex hidden">
         Projects
       </p>
-
-      <div className="w-full flex justify-center mb-20 primary transition duration-500">
-        <figure className="w-[45%] h-full flex ">
+      <div className="w-full  h-full flex md:flex-row flex-col justify-center items-center md:mb-40 md:primary transition duration-500">
+        <figure className=" w-4/5 md:w-[45%] h-full flex ">
           {" "}
           <img
             src="/Projects/anwe.png"
@@ -22,21 +21,21 @@ export const Projects = () => {
             className="w-full h-full"
           />
         </figure>
-        <div className="animate__animated animate__bounceInUp rounded-2xl  bg-black/70  h-2/5 w-[30%] absolute ml-[50%] mt-[12%]  mb-20 hovee ">
-          <div className="w-full mt-8">
-            <h2 className="font-semibold text-4xl flex pt-5 pb-1 justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
+        <div className="md:rounded-2xl  bg-black/70 w-4/5 h-2/5  md:h-2/5 md:w-[30%] md:absolute md:ml-[50%] md:mt-[12%] ">
+          <div className="md:w-full md:mt-8">
+            <h2 className="font-semibold text-xl md:text-4xl flex pt-3 md:pt-5 pb-1 justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
               ANWE
             </h2>
-            <p className="w-full px-5 flex justify-center text-center mt-4 text-md ">
+            <p className="w-full px-5 flex justify-center overflow-x-auto text-center   md:mt-4 font-light md:font-normal text-sm md:text-md ">
               The All-Africa Medical and Wellness Expo unites global healthcare
               providers and pharmaceuticals. I teamed up with Ifeanyi Onyeka to
               build this project.
             </p>
             <Link
               to="https://amwe.com.ng/"
-              className="w-full flex justify-center mt-5 gap-3 items-center"
+              className="w-full flex justify-center mt-2 mb-5 md:mb-0 md:mt-5 gap-3 items-center"
             >
-              <span className="text-4xl">
+              <span className="text-2xl md:text-4xl ">
                 <AiOutlineLink />
               </span>
               <span className="underline pb-1 text-blue-700">Go to site.</span>
@@ -44,37 +43,39 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-      <h1 className="mx-auto w-[20%] text-5xl ml-20 font-bold text-white">
-        Personal
-      </h1>
-      <p className="mx-auto w-[20%] mb-10 text-2xl pb-1 pl-20 ml-20 font-bold border-b-2 border-white/75 rounded-sm  bg-gradient-to-tr from-[white] via-[rgb(211,192,132)] to-[#f7edc0] bg-clip-text text-transparent">
-        Projects
-      </p>
+      <div className="flex md:flex-col flex-row my-10 md:my-0 justify-center gap-2">
+        <h1 className="md:mx-auto md:w-[20%] text-2xl md:text-5xl md:ml-20 md:font-bold text-white w-auto">
+          Personal
+        </h1>
+        <p className="md:mx-auto md:w-[20%] md:mb-10 font-medium text-2xl pb-1 md:pl-20 md:ml-20 md:font-bold md:border-b-2 border-white/75 rounded-sm  bg-gradient-to-tr from-[white] via-[rgb(211,192,132)] to-[#f7edc0] bg-clip-text text-transparent">
+          Projects
+        </p>
+      </div>
 
-      <div className="w-full grid grid-cols-2 px-10 gap-y-5 gap-x-5">
+      <div className="w-full grid md:grid-cols-2 px-10 gap-y-5 gap-x-5">
         <Atropos
           className="w-full bg-black/10 h-full primary relative atropos my-atropos"
           data-atropos-offset="-5"
         >
-          <div className=" bg-black/70  backdrop-blur-sm h-full w-full absolute  hovee ">
+          <div className=" md:bg-black/70 bg-black  backdrop-blur-sm h-full w-full absolute  hovee ">
             <div>
-              <h1 className="font-semibold text-4xl  pt-20  pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
+              <h1 className="font-semibold text-xl pt-3 md:text-4xl  md:pt-20  pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
                 PIZBUG
               </h1>
 
-              <p className="w-full px-20 flex justify-center text-center mt-4 text-md ">
+              <p className="w-full px-4 font-light md:font-normal text-sm md:text-md md:px-20 flex justify-center text-center md:mt-4 text-md ">
                 PizBug is a successful personal project, an online pizza and
                 burger store built to test my React skills. Desktop responsive
                 only.
               </p>
               <Link
                 to="https://food-service-sandy.vercel.app/"
-                className="w-full flex justify-center mt-5 gap-3 items-center"
+                className="w-full flex justify-center mt-2 md:mt-5 gap-3 items-center"
               >
-                <span className="text-4xl">
+                <span className="md:text-4xl">
                   <AiOutlineLink />
                 </span>
-                <span className="underline pb-1 text-blue-700">
+                <span className="text-sm md:text-lg underline pb-1 text-blue-700">
                   Go to site.
                 </span>
               </Link>
@@ -93,24 +94,24 @@ export const Projects = () => {
           data-atropos-offset="-5"
           className="w-full h-full primary relative"
         >
-          <div className=" bg-black/70  backdrop-blur-sm w-full h-full absolute hovee">
+          <div className=" md:bg-black/70 bg-black  backdrop-blur-sm w-full h-full absolute hovee">
             <div>
-              <h1 className="font-semibold text-4xl  pt-20  pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
+              <h1 className="font-semibold text-xl pt-3 md:text-4xl  md:pt-20  pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
                 WUUSTORE
               </h1>
 
-              <p className="w-full px-20 flex justify-center text-center mt-4 text-md ">
+              <p className="w-full px-4 font-light md:font-normal text-sm md:text-md md:px-20 flex justify-center text-center md:mt-4 text-md ">
                 WUUSTORE is An online furniture marketplace I built, currently
                 paused due to my internship. Desktop responsive
               </p>
               <Link
                 to="https://wuu-store.netlify.app/"
-                className="w-full flex justify-center mt-5 gap-3 items-center"
+                className="w-full flex justify-center mt-2 md:mt-5 gap-3 items-center"
               >
-                <span className="text-4xl">
+                <span className="md:text-4xl">
                   <AiOutlineLink />
                 </span>
-                <span className="underline pb-1 text-blue-700">
+                <span className="text-sm md:text-lg underline pb-1 text-blue-700">
                   Go to site.
                 </span>
               </Link>
@@ -129,13 +130,13 @@ export const Projects = () => {
           data-atropos-offset="-5"
           className="w-full h-full primary relative"
         >
-          <div className=" bg-black/70  backdrop-blur-sm h-full w-full absolute hovee">
+          <div className=" md:bg-black/70 bg-black  backdrop-blur-sm h-full w-full absolute hovee">
             <div>
-              <h1 className="font-semibold text-4xl  pt-20  pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
+              <h1 className="font-semibold text-xl pt-3 md:text-4xl  md:pt-20  pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
                 Toolkit Master
               </h1>
 
-              <p className="w-full px-20 flex justify-center text-justify mt-4 text-md ">
+              <p className="w-full px-4 font-light md:font-normal text-sm md:text-md md:px-20 flex justify-center text-center md:mt-4 text-md ">
                 Unfortunately the name has nothing to do with the content of
                 this site lol, I gave it that name because it is a personal
                 project and I learned how to apply a state management called
@@ -143,12 +144,12 @@ export const Projects = () => {
               </p>
               <Link
                 to="https://checking-out-redux-tool-kit.vercel.app/"
-                className="w-full flex justify-center mt-5 gap-3 items-center"
+                className="w-full flex justify-center mt-2 md:mt-5 gap-3 items-center"
               >
-                <span className="text-4xl">
+                <span className="md:text-4xl">
                   <AiOutlineLink />
                 </span>
-                <span className="underline pb-1 text-blue-700">
+                <span className="text-sm md:text-lg underline pb-1 text-blue-700">
                   Go to site.
                 </span>
               </Link>

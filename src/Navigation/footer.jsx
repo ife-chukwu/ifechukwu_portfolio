@@ -2,7 +2,7 @@ import { HashLink } from "react-router-hash-link";
 
 export const Footer = () => {
   return (
-    <div className="w-full flex  justify-center bg-black h-20 items-center">
+    <div className="w-full flex  justify-center bg-black/50 backdrop-blur-sm h-20 items-center">
       <div className="w-[89%] flex justify-between ">
         <ul className="flex justify-start text-[12px] gap-8 font-medium w-3/5 secondary-font uppercase">
           <HashLink
