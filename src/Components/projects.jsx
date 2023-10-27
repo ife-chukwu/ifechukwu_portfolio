@@ -166,23 +166,23 @@ export const Projects = () => {
         </Atropos>
       </div>
       <div className="w-full  flex justify-center mt-[10%]">
-        <h1 className="w-2/5 mb-10 text-5xl pb-2 font-bold border-b-2 border-white/75 rounded-sm  bg-gradient-to-tr from-[white] via-[rgb(211,192,132)] to-[#f7edc0] bg-clip-text text-transparent">
-          Task <span className="text-white">Projects</span>
+        <h1 className="md:w-2/5 mb-10 text-2xl md:text-5xl md:pb-2 font-medium md:font-bold border-b-2 border-white/75 rounded-sm  bg-gradient-to-tr from-[white] via-[rgb(211,192,132)] to-[#f7edc0] bg-clip-text text-transparent">
+          Task <span className="text-white font-normal lg:bold">Projects</span>
         </h1>
       </div>
       <div className="w-full h-full flex justify-center">
-        <div className="w-[85%] grid-cols-2 grid grid-flow-row-dense gap-x-10 gap-y-5">
+        <div className="w-[85%] md:grid-cols-2 grid-cols-1 grid md:grid-flow-row-dense gap-x-10 gap-y-5">
           <Atropos
             data-atropos-offset="-5"
-            className="w-full min-h-[60%] primary row-span-2 relative"
+            className="w-full min-h-[60%] primary md:row-span-2 relative"
           >
             <div className=" bg-black/70  backdrop-blur-sm h-full w-full absolute hovee flex justify-center  items-center">
               <div>
-                <h1 className="font-semibold text-4xl   pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
+                <h1 className="font-semibold text-2xl md:text-4xl   pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
                   PayME
                 </h1>
 
-                <p className="w-full px-20 flex justify-center text-center mt-4 text-md ">
+                <p className="w-full px-5 md:px-20 flex justify-center text-center mt-4 text-md ">
                   PayME is a salary disbursement platform where employees are
                   paid at just a push of a button.
                 </p>
@@ -190,7 +190,7 @@ export const Projects = () => {
                   to="https://www.behance.net/gallery/182291389/Payme-Payroll-Management-System"
                   className="w-full flex justify-center mt-5 gap-3 items-center"
                 >
-                  <span className="text-4xl">
+                  <span className="md:text-4xl text-xl">
                     <AiOutlineLink />
                   </span>
                   <span className="underline pb-1 text-blue-700">
@@ -213,23 +213,23 @@ export const Projects = () => {
             data-atropos-offset="-5"
             className="w-full  primary relative"
           >
-            <div className=" bg-black/70  backdrop-blur-sm h-full w-full absolute hovee flex justify-center  items-center">
+            <div className=" bg-black/70  backdrop-blur-sm min-h-full w-full absolute hovee flex justify-center  items-center">
               <div>
-                <h1 className="font-semibold text-4xl items-center pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
+                <h1 className="font-semibold text-2xl  mt-2 md:mt-0 md:text-4xl items-center md:pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
                   Spotify
                 </h1>
 
-                <p className="w-full px-20 flex justify-center  mt-4 text-md text-justify ">
+                <p className="w-full px-5 md:px-20 flex justify-center  mt-2 md:mt-4 text-sm md:text-md text-justify ">
                   This is just a replicate of spotify design given to us as a
                   standardization test during my internship. In order to get
                   access to this site you will have to have a real spotify
                   account.{" "}
                 </p>
                 <Link
-                  to="https://amwe.com.ng/"
-                  className="w-full flex justify-center mt-5 gap-3 items-center"
+                  to="https://spotify-replicate-learnable.netlify.app/"
+                  className="w-full flex justify-center mt-1 md:mt-5 gap-3 items-center"
                 >
-                  <span className="text-4xl">
+                  <span className="md:text-4xl">
                     <AiOutlineLink />
                   </span>
                   <span className="underline pb-1 text-blue-700">
@@ -237,7 +237,7 @@ export const Projects = () => {
                   </span>
                 </Link>
                 <Link
-                  className="flex justify-center text-sm text-blue-500"
+                  className="flex justify-center text-[12px] md:text-sm text-blue-500"
                   to="https://developer.spotify.com/documentation/web-api"
                 >
                   Open this api tool in order for this site to respond properly{" "}
@@ -259,20 +259,20 @@ export const Projects = () => {
           >
             <div className=" bg-black/70  backdrop-blur-sm h-full w-full absolute hovee flex justify-center  items-center">
               <div>
-                <h1 className="font-semibold text-4xl   pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
+                <h1 className="font-semibold text-2xl md:text-4xl   pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
                   SavvySaver
                 </h1>
 
-                <p className="w-full px-20 flex justify-center mt-4 text-md text-justify ">
+                <p className="w-full px-5 md:px-20 flex justify-center mt-1 md:mt-4 text-sm md:text-md text-justify ">
                   This is an unfinished project, the purpose of this project is
                   to help people with budget making. It will help you keep track
                   of your savings and expenditures. Unfinished.
                 </p>
                 <Link
                   to="https://budget-app-five-lac.vercel.app/"
-                  className="w-full flex justify-center mt-5 gap-3 items-center"
+                  className="w-full flex justify-center mt-2 md:mt-5 gap-3 items-center"
                 >
-                  <span className="text-4xl">
+                  <span className="text-xl md:text-4xl">
                     <AiOutlineLink />
                   </span>
                   <span className="underline pb-1 text-blue-700">
@@ -292,15 +292,15 @@ export const Projects = () => {
           </Atropos>
           <Atropos
             data-atropos-offset="-5"
-            className="w-full h-4/5 primary col-span-2 relative"
+            className="w-full h-4/5 primary md:col-span-2 relative"
           >
             <div className=" bg-black/70  backdrop-blur-sm h-full w-full absolute hovee flex justify-center items-center">
               <div>
-                <h1 className="font-semibold text-4xl  pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
+                <h1 className="font-semibold text-2xl md:text-4xl mt-5 md:mt-0  pb-1 w-full flex justify-center bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent">
                   Netflix
                 </h1>
                 <div className="w-full flex justify-center">
-                  <p className="w-3/5 px-20  text-justify mt-4 text-md ">
+                  <p className="md:w-3/5 px-5  md:px-20  text-justify md:mt-4 text-sm md:text-md ">
                     This is a non action website, in other words there is no
                     javascript involved just HTML and CSS, this task was giving
                     to me during my internship to test us on a particular CSS
@@ -309,9 +309,9 @@ export const Projects = () => {
                 </div>
                 <Link
                   to="https://netflix-clone-orcin-nu.vercel.app/?"
-                  className="w-full flex justify-center mt-5 gap-3 items-center"
+                  className="w-full flex justify-center mt-2 md:mt-5 gap-3 items-center"
                 >
-                  <span className="text-4xl">
+                  <span className="text-xl md:text-4xl">
                     <AiOutlineLink />
                   </span>
                   <span className="underline pb-1 text-blue-700">

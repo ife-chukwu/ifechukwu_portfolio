@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { BsDashLg } from "react-icons/bs";
+import { IoIosMenu } from "react-icons/io";
+import { HiOutlineXMark } from "react-icons/hi2";
 import { Modal } from "../modal";
 
 export const Navigation = () => {
@@ -41,9 +41,9 @@ export const Navigation = () => {
         scrolled
           ? "md:bg-black/50 md:backdrop-blur-sm duration-1000 transition-all"
           : "md:bg-transparent"
-      } fixed w-full h-[10%] z-40 bg-black `}
+      } fixed w-full h-[10%] z-40 bg-black/60 `}
     >
-      <div className="w-full h-full flex  pl-10 md:items-center justify-between md:px-[5%]">
+      <div className="w-full h-full flex  pl-5 md:items-center justify-between md:px-[5%]">
         <h1 className="text-white text-2xl w-[15%] flex items-center">
           IFECH
           <span className="bg-gradient-to-tr from-[white] via-[#f1eca1] to-[#fad73b] bg-clip-text text-transparent">
@@ -61,24 +61,24 @@ export const Navigation = () => {
         <button
           className={`${
             menu ? "hidden" : ""
-          } md:hidden w-2/5 flex justify-end pr-10 text-white  items-center text-4xl`}
+          } md:hidden w-2/5 flex justify-end pr-5 text-white/80  items-center text-4xl`}
           onClick={handleMenu}
         >
-          <HiOutlineMenuAlt4 />
+          <IoIosMenu />
         </button>
 
         <div
-          className={`flex  md:flex-row  md:items-center md:h-full text-[13px] font-light min-h-screen ${
+          className={`flex  md:flex-row  md:items-center md:h-full text-[13px] font-light  ${
             menu
-              ? "flex-col backdrop-blur-md md:backdrop-blur-0"
+              ? "flex-col backdrop-blur-md md:backdrop-blur-0 "
               : "hidden md:flex"
           }  md:w-[85%] w-4/5 top-0 left-0`}
         >
           <button
-            className="w-full  flex justify-start pl-5 text-white  items-center text-5xl md:hidden"
+            className="w-full h-full flex justify-end  pr-2 md:pl-5 text-white py-2  items-center text-3xl md:hidden"
             onClick={handleMenu}
           >
-            <BsDashLg />
+            <HiOutlineXMark />
           </button>
 
           <ul className="flex h-auto md:flex-row flex-col md:justify-center md:pt-0 text-[12px]  md:gap-8 font-medium md:w-[70%] secondary-font uppercase">
@@ -87,7 +87,7 @@ export const Navigation = () => {
               smooth
               className={`${
                 active === 0
-                  ? "bg-black/50 md:bg-transparent border-b border-yellow-200   backdrop-blur-sm  w-full"
+                  ? "bg-black/50 md:bg-transparent border-t md:border-t-0 md:backdrop-blur-0 border-b border-yellow-100   backdrop-blur-sm   w-full"
                   : ""
               } md:w-[14%] flex justify-center items-center transition duration-700`}
               onClick={() => handleActive(0)}
@@ -105,7 +105,7 @@ export const Navigation = () => {
               smooth
               className={`${
                 active === 1
-                  ? "bg-black/50 md:bg-transparent   backdrop-blur-sm border-b border-yellow-200  w-full transition duration-500"
+                  ? "bg-black/50 md:bg-transparent   backdrop-blur-sm md:border-t-0 md:backdrop-blur-0 border-t border-b border-yellow-100  w-full transition duration-500"
                   : ""
               } md:w-[14%] h-full flex justify-center items-center `}
               onClick={() => handleActive(1)}
@@ -123,7 +123,7 @@ export const Navigation = () => {
               smooth
               className={`${
                 active === 2
-                  ? "bg-black/50 md:bg-transparent  backdrop-blur-sm border-b border-yellow-200  w-full transition duration-500"
+                  ? "bg-black/50 md:bg-transparent  backdrop-blur-sm md:border-t-0 md:backdrop-blur-0 border-t border-b border-yellow-100  w-full transition duration-500"
                   : ""
               } md:w-[14%] h-full flex justify-center items-center `}
               onClick={() => handleActive(2)}
@@ -140,7 +140,7 @@ export const Navigation = () => {
               smooth
               className={`${
                 active === 3
-                  ? "bg-black/50 md:bg-transparent   backdrop-blur-sm border-b border-yellow-200 w-full transition duration-500"
+                  ? "bg-black/50 md:bg-transparent   backdrop-blur-sm md:border-t-0 md:backdrop-blur-0 border-t border-b border-yellow-100 w-full transition duration-500"
                   : ""
               } md:w-[14%] h-full flex justify-center items-center `}
               onClick={() => handleActive(3)}
@@ -157,7 +157,7 @@ export const Navigation = () => {
               smooth
               className={`${
                 active === 4
-                  ? "bg-black/50 md:bg-transparent  backdrop-blur-sm border-b border-yellow-200 w-full transition duration-500"
+                  ? "bg-black/50 md:bg-transparent  backdrop-blur-sm md:border-t-0 md:backdrop-blur-0 border-t border-b border-yellow-100 w-full transition duration-500"
                   : ""
               } md:w-[14%] h-full flex justify-center items-center `}
               onClick={() => handleActive(4)}
