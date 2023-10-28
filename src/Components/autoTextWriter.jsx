@@ -32,7 +32,7 @@ export const AutoTextWriter = () => {
           <h2 className="font-medium secondary-font text-xl bg-gradient-to-tr from-[white] via-[#d3c084] to-[#f7edc0] bg-clip-text text-transparent uppercase">
             Ifechukwu Onyeka.
           </h2>
-          <h3 className="text-[12px] font-light text-[white] secondary-font">
+          <h3 className="text-sm md:text-md  font-light text-[white] uppercase">
             <TypeAnimation
               sequence={[
                 "I am 20 years old",
@@ -58,8 +58,8 @@ export const AutoTextWriter = () => {
             />
           </h3>
         </div>
-        <div className="w-2/5 h-full flex justify-center items-start md:mt-[10%]">
-          <figure className="w-[45%] h-[57%] rounded-full border border-white/60">
+        <div className="w-2/5 h-full flex justify-center items-start md:mt-[15%] lg:mt-[7%]">
+          <figure className="lg:w-[300px] lg:h-[300px] md:w-[200px] md:h-[200px] rounded-full border border-white/60">
             <img
               src={profileImages[currentProfile]}
               className="w-full h-full rounded-full transition-all duration-500"
