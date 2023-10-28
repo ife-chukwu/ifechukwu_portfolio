@@ -11,7 +11,7 @@ export const About = () => {
         </span>{" "}
         Me
       </h1>
-      <p className="ml-5 md:ml-20 mt-4 w-[90%] md:w-[45%] px-5 md:px-10 py-5 md:py-10 h-full backdrop-blur-lg bg-black/40 md:bg-black/10 rounded-md  text-md md:text-lg font-light flex text-justify">
+      <p className="ml-5 md:ml-20 mt-4 w-[90%] md:w-3/5 lg:w-[45%] px-5 md:px-10 py-5 md:py-10 h-full backdrop-blur-lg bg-black/40 md:bg-black/10 rounded-md  text-md md:text-lg font-light flex text-justify">
         I am Ifechukwu Onyeka, a young adult with a passion for programming,
         especially in JavaScript (React). My interest in tech was sparked by my
         elder brother, and since then, I have been working hard to improve my
@@ -27,9 +27,9 @@ export const About = () => {
           Front-end web development intern
         </p>
 
-        <div className="border-b border-[#d3c1a0] w-full md:w-[48%] flex md:gap-0 gap-5 justify-between items-center">
+        <div className="border-b border-[#d3c1a0] w-full md:w-[68%] lg:w-[48%]  flex md:gap-10 lg:gap-0 gap-5 justify-between items-center">
           <div className="w-3/5 md:w-2/5 flex">
-            <div className="flex md:flex-row flex-col   w-full mt-2 mb-3 justify-between">
+            <div className="flex md:flex-row flex-col items-center   w-full mt-2 mb-3 justify-between">
               <Link
                 to="https://www.genesystechhub.com/"
                 className="font-light text-sm text-start ml-5  md:ml-0"
@@ -47,7 +47,7 @@ export const About = () => {
               </span>
             </div>
           </div>
-          <div className="w-2/5 md:w-2/5 flex md:flex-row flex-col-reverse gap-1 md:gap-10 items-center">
+          <div className="w-2/5 md:w-2/5 lg:w-2/5 flex md:flex-row flex-col-reverse gap-1 md:gap-5 lg:gap-10 items-center">
             <p className="font-medium flex justify-center text-sm bg-[#87724a] md:w-[30%] py-1 rounded-2xl px-5 md:px-2">
               Internship
             </p>
